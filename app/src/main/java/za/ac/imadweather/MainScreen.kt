@@ -25,8 +25,8 @@ class MainScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mainscreen)
 
+        // Initialize UI elements
         averageTempView = findViewById(R.id.Average)
-
         for (i in 0..6) {
             val minTempId = resources.getIdentifier("minTemp$i", "id", packageName)
             val maxTempId = resources.getIdentifier("maxTemp$i", "id", packageName)
@@ -37,11 +37,13 @@ class MainScreen : AppCompatActivity() {
             conditionInputs[i] = findViewById(conditionId)
         }
 
+        // Initialize buttons
         val clearButton = findViewById<Button>(R.id.Clear)
         val calculateButton = findViewById<Button>(R.id.Calculate)
         val viewButton = findViewById<Button>(R.id.View)
         val saveButton = findViewById<Button>(R.id.Save)
 
+        // Set click listeners for buttons
         clearButton.setOnClickListener {
             clearInputs()
         }
@@ -56,6 +58,7 @@ class MainScreen : AppCompatActivity() {
         }
     }
 
+    // Function to clear input fields
     private fun clearInputs() {
         for (i in 0..6) {
             minTempInputs[i]?.text?.clear()
@@ -66,6 +69,7 @@ class MainScreen : AppCompatActivity() {
         Toast.makeText(this, "Inputs cleared.", Toast.LENGTH_SHORT).show()
     }
 
+    // Function to calculate average temperature
     private fun calculateAverage() {
         try {
             var sumMin = 0
@@ -88,6 +92,7 @@ class MainScreen : AppCompatActivity() {
         }
     }
 
+    // Function to navigate to detailed view screen
     private fun navigateToDetailView() {
         val intent = Intent(this, DetailedView::class.java)
         intent.putExtra("minTemps", minTemps)
@@ -96,6 +101,7 @@ class MainScreen : AppCompatActivity() {
         startActivity(intent)
     }
 
+    // Function to save inputs (if needed)
     private fun saveInputs() {
         // Implement save functionality if needed
         Toast.makeText(this, "Inputs saved.", Toast.LENGTH_SHORT).show()
