@@ -9,7 +9,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-class mainscreen : AppCompatActivity() {
+class MainScreen : AppCompatActivity() {
 
     private lateinit var averageTempView: TextView
     private val minTempInputs = arrayOfNulls<EditText>(7)

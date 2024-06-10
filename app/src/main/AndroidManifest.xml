@@ -13,10 +13,10 @@
         android:theme="@style/Theme.Imadweather"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity2"
+            android:name=".DetailedView"
             android:exported="false" />
         <activity
-            android:name=".mainscreen"
+            android:name=".MainScreen"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

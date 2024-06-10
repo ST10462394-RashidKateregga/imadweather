@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mainscreen">
+    tools:context=".MainScreen">
 
     <ImageView
         android:id="@+id/imageView"
@@ -21,22 +21,22 @@
 
     <EditText
         android:id="@+id/Day"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="248dp"
+        android:layout_height="84dp"
         android:ems="10"
         android:hint="Day"
         android:inputType="date"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126" />
+        app:layout_constraintVertical_bias="0.044" />
 
     <EditText
         android:id="@+id/minTempId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="254dp"
+        android:layout_height="93dp"
         android:ems="10"
         android:hint="minTemp"
         android:inputType="number"
@@ -45,12 +45,12 @@
         app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.255" />
+        app:layout_constraintVertical_bias="0.198" />
 
     <EditText
         android:id="@+id/maxTempId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="259dp"
+        android:layout_height="99dp"
         android:ems="10"
         android:hint="maxTemp"
         android:inputType="number"
@@ -63,17 +63,17 @@
 
     <EditText
         android:id="@+id/Weather"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="263dp"
+        android:layout_height="124dp"
         android:ems="10"
         android:hint="Weather Condtion"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintHorizontal_bias="0.087"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.475" />
+        app:layout_constraintVertical_bias="0.573" />
 
     <Button
         android:id="@+id/Calculate"
@@ -83,10 +83,10 @@
         android:text="Calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintHorizontal_bias="0.821"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintVertical_bias="0.907" />
 
     <Button
         android:id="@+id/Clear"
@@ -99,7 +99,7 @@
         app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.696" />
+        app:layout_constraintVertical_bias="0.775" />
 
     <Button
         android:id="@+id/Save"
@@ -109,10 +109,10 @@
         android:text="Save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintHorizontal_bias="0.817"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.588" />
+        app:layout_constraintVertical_bias="0.761" />
 
     <Button
         android:id="@+id/View"
